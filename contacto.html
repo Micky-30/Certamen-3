@@ -17,7 +17,7 @@
                 <a href="index.html#nuestros-programas"> HISTORIA </a>
                 <a href="index.html#caracteristicas"> LOGROS </a>
                 <a href="contacto.html"> Contacto </a>
-                <a href="index.html"> Home </a>
+                <a href="index.html"> HOME </a>
 
 
             </nav>
@@ -25,12 +25,34 @@
     </header>
     <h2>Contacto</h2>
 
-<form action="#">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="    "><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+    <form action="">
+        <div class="control">
+            <label for="txtnombre">Nombre:</label>
+
+            <input class="intexto" type="text" name="txtnombre" id="txtnombre" placeholder="Ingrese su nombre" required autocomplete="off">                      
+        </div>
+        <div class="control">
+            <label for="">Clave</label>
+
+            <input class="intexto" type="password" name="txtclave" id="txtclave" placeholder="Ingrese clave" maxlength="10">          
+        </div>
+        <div class="control">
+            <label for="">Edad</label>
+
+            <input class="intexto" type="number" name="txtedad" id="txtedad" placeholder="Ingrese edad" maxlength="3" value="18">          
+        </div>
+        <div class="control">
+            <label for="">Email</label>
+
+            <input class="intexto" type="email" name="txtemail" id="txtemail" placeholder="Ingrese email">          
+        </div>
+
+        <div>
+        </div>
+        <div>
+            <button class="buttonform" type="reset">Limpiar</button>
+            <button class="buttonform" type="submit">Enviar</button>
+        </div>
+    </form>
 </body>
 </html>
